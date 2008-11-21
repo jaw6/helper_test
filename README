@@ -2,7 +2,7 @@
 
 Makes stubs so you can test helpers.
 
-The helpers are placed in test/unit/helpers and will be run automatically when you run unit tests.
+The helpers are placed in test/unit/helpers and will be run automatically whenever unit tests are run.
 
 = Usage
 
@@ -11,11 +11,7 @@ Run the helper_test generator with the shortened name of the helper you want to 
   # For TaskHelper
   ./script/generate helper_test Task
 
-Require the parent testcase class in your test_helper.rb
-
-  require File.expand_path(File.dirname(__FILE__) + '/helper_testcase')
-
-The testcase includes common helpers, but you can add others if necessary.
+(Note that it doesn't automagically guess plural endings, so for PostsHelper, you want "generate helper_test Posts", NOT "generate helper_test Post".)
 
 = Examples
 
