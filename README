@@ -1,29 +1,32 @@
-= Helper Test Generator
+h2. Helper Test Generator
 
 Makes stubs so you can test helpers.
 
 The helpers are placed in test/unit/helpers and will be run automatically whenever unit tests are run.
 
-= Usage
+h3. Usage
 
 Run the helper_test generator with the shortened name of the helper you want to test.
 
-  # For TaskHelper
-  ./script/generate helper_test Task
+*For TaskHelper:*
+
+@./script/generate helper_test Task@
 
 (Note that it doesn't automagically guess plural endings, so for PostsHelper, you want "generate helper_test Posts", NOT "generate helper_test Post".)
 
-= Examples
+h3. Examples
 
-  # Make a test for the BlogHelper
-  ./script/generate helper_test Blog
+*Make a test for the BlogHelper:*
 
-  # Make a test for Admin::UsersHelper
-  ./script/generate helper_test Admin::Users
+@./script/generate helper_test Blog@
+
+*Make a test for Admin::UsersHelper:*
+
+@./script/generate helper_test Admin::Users@
 
 Sub-folders will be made, if necessary.
 
-= Authors
+h3. Authors
 
 * Forked and updated to use ActionView::TestCase by Joshua Wehner http://yeoldewebshoppe.com/
 * Test stub by Ryan Davis http://zenspider.com
