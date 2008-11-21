@@ -28,6 +28,6 @@ Sub-folders will be made, if necessary.
 
 h3. Authors
 
-* Forked and updated to use ActionView::TestCase by Joshua Wehner http://yeoldewebshoppe.com/
-* Test stub by Ryan Davis http://zenspider.com
-* Original generator by Geoffrey Grosenbach http://nubyonrails.com
+* Forked and updated to use ActionView::TestCase by "Joshua Wehner":http://yeoldewebshoppe.com/
+* Test stub by "Ryan Davis":http://zenspider.com
+* Original generator by "Geoffrey Grosenbach":http://nubyonrails.com
