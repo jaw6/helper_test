@@ -3,7 +3,7 @@ class HelperTestGenerator < Rails::Generator::NamedBase
   attr_reader :helper_class_name, :directory_slashes
 
   def initialize(runtime_args, runtime_options = {})
-    @helper_class_name = Inflector.camelize(runtime_args.first)
+    @helper_class_name = runtime_args.first.camelize
     super
   end
 
